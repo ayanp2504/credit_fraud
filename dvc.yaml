@@ -8,3 +8,8 @@ stages:
     - make_dataset.test_split
     - make_dataset.seed
 
+  build_features:
+    cmd: python .\src\features\build_features.py
+    deps:
+    - .\src\features\build_features.py
+ 

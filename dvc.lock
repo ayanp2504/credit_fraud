@@ -15,3 +15,10 @@ stages:
       params.yaml:
         make_dataset.seed: 2030
         make_dataset.test_split: 0.2
+  build_features:
+    cmd: python .\src\features\build_features.py
+    deps:
+    - path: .\src\features\build_features.py
+      hash: md5
+      md5: c5d9cc0669b412f75863d410354cdfd9
+      size: 1299
