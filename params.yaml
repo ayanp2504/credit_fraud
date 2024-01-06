@@ -1,4 +1,3 @@
 make_dataset:
-  input_file: /data/raw/creditcard.csv
   test_split: 0.2
   seed: 2030

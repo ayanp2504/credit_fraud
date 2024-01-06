@@ -28,8 +28,8 @@ def main():
     params_file = home_dir.as_posix() + '/params.yaml'
     params = yaml.safe_load(open(params_file))["make_dataset"]
 
-    # input_file = sys.argv[1]
-    data_path = home_dir.as_posix() + params['input_file']
+    input_file = sys.argv[1]
+    data_path = home_dir.as_posix() + input_file
     output_path = home_dir.as_posix() + '/data/processed'
     
     data = load_data(data_path)
